@@ -1,10 +1,12 @@
 package dev.qori.moviecatalogue.entities
 
 data class Movie(
+    val id: Int,
     val title: String,
     val poster: String,
     val description: String,
-    val releaseDate: String,
-    val voteAverage: Double,
-    val voteCount: Int,
+    val releaseYear: Int,
+    val score: Int,
+    val ageRating: MovieAgeRating,
+    val genres: List<String>,
 )
