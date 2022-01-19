@@ -116,4 +116,6 @@ object MovieData {
             genres = listOf("Adventure","Action", "Science Fiction"),
         ),
     )
+
+    fun getItemCount() = list.size
 }

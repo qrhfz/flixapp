@@ -152,4 +152,6 @@ object TvShowData {
     fun getWhereId(id: Int): TvShow? = list.firstOrNull {
         it.id == id
     }
+
+    fun getItemCount() = MovieData.list.size
 }

@@ -1,7 +1,7 @@
 package dev.qori.moviecatalogue.ui.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import dev.qori.moviecatalogue.R
 
 class DetailActivity : AppCompatActivity() {

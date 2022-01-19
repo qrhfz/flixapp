@@ -1,9 +1,8 @@
 package dev.qori.moviecatalogue.ui.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
-import dev.qori.moviecatalogue.R
 import dev.qori.moviecatalogue.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

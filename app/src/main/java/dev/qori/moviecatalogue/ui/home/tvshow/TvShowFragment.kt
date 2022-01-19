@@ -1,10 +1,10 @@
 package dev.qori.moviecatalogue.ui.home.tvshow
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import dev.qori.moviecatalogue.R
 
 // TODO: Rename parameter arguments, choose names that match
