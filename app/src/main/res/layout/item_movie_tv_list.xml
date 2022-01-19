@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/showPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/showTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/showPoster"
+        app:layout_constraintTop_toTopOf="@+id/showPoster"
+        tools:text="Judul Show" />
+
+    <TextView
+        android:id="@+id/showDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/starScore"
+        app:layout_constraintTop_toBottomOf="@+id/starScore"
+        tools:text="Deskripsi" />
+
+    <ImageView
+        android:id="@+id/starScore"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/showTitle"
+        app:layout_constraintTop_toBottomOf="@+id/showTitle"
+        app:srcCompat="@drawable/ic_baseline_star_24" />
+
+    <TextView
+        android:id="@+id/showScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/starScore"
+        app:layout_constraintStart_toEndOf="@+id/starScore"
+        tools:text="88%" />
+
+    <TextView
+        android:id="@+id/showYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/showScore"
+        app:layout_constraintStart_toEndOf="@+id/showScore"
+        tools:text="2020" />
+</androidx.constraintlayout.widget.ConstraintLayout>
