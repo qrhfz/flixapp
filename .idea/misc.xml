@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16995947315096252" />
         <entry key="app/src/main/res/layout/activity_movie_detail.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_tv_show_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_tv_show.xml" value="0.2115036231884058" />
         <entry key="app/src/main/res/layout/item_movie_list.xml" value="0.2368659420289855" />

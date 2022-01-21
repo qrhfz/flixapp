@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.movie.MovieDetailActivity">
+    tools:context=".ui.tvshow.TvShowDetailActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/ivPosterDetail"
+            android:id="@+id/ivTvShowPosterDetail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:contentDescription="@string/poster_film"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/glTvShowRight"
+            app:layout_constraintStart_toStartOf="@+id/glTvShowLeft"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tvMovieTitle"
+            android:id="@+id/tvTvShowTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -33,65 +33,65 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivPosterDetail"
+            app:layout_constraintTop_toBottomOf="@+id/ivTvShowPosterDetail"
             tools:text="Judul Film" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
+            android:id="@+id/glTvShowLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.166" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline5"
+            android:id="@+id/glTvShowRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.833" />
 
         <TextView
-            android:id="@+id/tvMovieScore"
+            android:id="@+id/tvTvShowScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvMovieReleaseYear"
-            app:layout_constraintEnd_toStartOf="@+id/tvMovieReleaseYear"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTvShowAiringYear"
+            app:layout_constraintEnd_toStartOf="@+id/tvTvShowAiringYear"
             tools:text="98%" />
 
         <TextView
-            android:id="@+id/tvMovieReleaseYear"
+            android:id="@+id/tvTvShowAiringYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            app:layout_constraintEnd_toStartOf="@+id/glTvShowRight"
+            app:layout_constraintStart_toStartOf="@+id/glTvShowLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tvTvShowTitle"
             tools:text="2021" />
 
         <TextView
-            android:id="@+id/tvMovieAgeRating"
+            android:id="@+id/tvTvShowAgeRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvMovieReleaseYear"
-            app:layout_constraintStart_toEndOf="@+id/tvMovieReleaseYear"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTvShowAiringYear"
+            app:layout_constraintStart_toEndOf="@+id/tvTvShowAiringYear"
             tools:text="PG-13" />
 
         <TextView
-            android:id="@+id/tvGenres"
+            android:id="@+id/tvTvShowGenres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textAlignment="center"
             android:textStyle="italic"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toBottomOf="@+id/tvMovieReleaseYear"
+            app:layout_constraintEnd_toStartOf="@+id/glTvShowRight"
+            app:layout_constraintStart_toStartOf="@+id/glTvShowLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tvTvShowAiringYear"
             tools:text="Comedy, Crime, Drama" />
 
         <TextView
-            android:id="@+id/tvMovieDescription"
+            android:id="@+id/tvTvShowDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -99,7 +99,7 @@
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvGenres"
+            app:layout_constraintTop_toBottomOf="@+id/tvTvShowGenres"
             tools:text="Lorem ipsum dolor sit amet. Adispicing elit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

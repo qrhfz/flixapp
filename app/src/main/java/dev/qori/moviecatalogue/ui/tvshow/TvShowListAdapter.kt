@@ -1,5 +1,6 @@
 package dev.qori.moviecatalogue.ui.tvshow
 
+import android.content.Intent
 import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,12 +17,21 @@ class TvShowListAdapter: RecyclerView.Adapter<TvShowListAdapter.ViewHolder>() {
     class ViewHolder(private val binding: ItemTvShowListBinding, private val res: Resources)
         : RecyclerView.ViewHolder(binding.root){
         fun bind(show: TvShow){
-            binding.tvShowListTitle.text = show.title
-            binding.tvShowListScore.text = String.format(res.getString(R.string.score), show.score)
-            binding.tvShowListAiringYear.text =
-                String.format(res.getString(R.string.tvshow_airing), show.firstSeasonYear, show.lastSeasonYear)
-            binding.tvShowListDescription.text = show.description.truncate()
-            Glide.with(binding.root).load(show.poster).into(binding.tvShowListPoster)
+            with(binding){
+                tvShowListTitle.text = show.title
+                tvShowListScore.text = String.format(res.getString(R.string.score), show.score)
+                tvShowListAiringYear.text =
+                    String.format(res.getString(R.string.tvshow_airing), show.firstSeasonYear, show.lastSeasonYear)
+                tvShowListDescription.text = show.description.truncate()
+                Glide.with(itemView).load(show.poster).into(binding.tvShowListPoster)
+
+                itemView.setOnClickListener {
+                    val intent = Intent(it.context, TvShowDetailActivity::class.java)
+                    intent.putExtra("ID", show.id)
+                    it.context.startActivity(intent)
+                }
+            }
+
         }
     }
 
