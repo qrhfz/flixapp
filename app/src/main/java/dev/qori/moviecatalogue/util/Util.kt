@@ -1,8 +1,9 @@
 package dev.qori.moviecatalogue.util
 
 fun String.truncate(): String{
-    return if(this.length>150){
-        this.slice(0..150)+"..."
+    val words = this.split(" ")
+    return if(words.size>20){
+        words.slice(0..20).joinToString(" ")+"..."
     }else{
         this
     }
