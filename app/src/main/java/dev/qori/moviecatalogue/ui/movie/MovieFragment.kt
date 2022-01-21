@@ -1,4 +1,4 @@
-package dev.qori.moviecatalogue.ui.home.movie
+package dev.qori.moviecatalogue.ui.movie
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package dev.qori.moviecatalogue.ui.home.tvshow
+package dev.qori.moviecatalogue.ui.tvshow
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,7 +16,7 @@ class TvShowFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentTvShowBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -1,4 +1,4 @@
-package dev.qori.moviecatalogue.ui.home.tvshow
+package dev.qori.moviecatalogue.ui.tvshow
 
 import android.content.res.Resources
 import android.view.LayoutInflater

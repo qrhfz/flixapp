@@ -1,4 +1,4 @@
-package dev.qori.moviecatalogue.ui.home.tvshow
+package dev.qori.moviecatalogue.ui.tvshow
 
 import androidx.lifecycle.ViewModel
 import dev.qori.moviecatalogue.data.TvShowData

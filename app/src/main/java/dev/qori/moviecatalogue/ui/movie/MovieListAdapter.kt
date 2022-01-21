@@ -1,5 +1,6 @@
-package dev.qori.moviecatalogue.ui.home.movie
+package dev.qori.moviecatalogue.ui.movie
 
+import android.content.Intent
 import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -17,11 +18,20 @@ class MovieListAdapter: RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
     inner class ViewHolder(private val binding: ItemMovieListBinding, private val res: Resources)
         : RecyclerView.ViewHolder(binding.root){
         fun bind(movie: Movie){
-            binding.movieListTitle.text = movie.title
-            binding.movieListScore.text = String.format(res.getString(R.string.score), movie.score)
-            binding.movieListReleaseYear.text = movie.releaseYear.toString()
-            binding.movieListDescription.text = movie.description.truncate()
-            Glide.with(binding.root).load(movie.poster).into(binding.movieListPoster)
+            with(binding){
+                movieListTitle.text = movie.title
+                movieListScore.text = String.format(res.getString(R.string.score), movie.score)
+                movieListReleaseYear.text = movie.releaseYear.toString()
+                movieListDescription.text = movie.description.truncate()
+                Glide.with(itemView).load(movie.poster).into(binding.movieListPoster)
+
+                itemView.setOnClickListener{
+                    val intent= Intent(it.context, MovieDetailActivity::class.java).apply {
+                        this.putExtra("ID", movie.id)
+                    }
+                    it.context.startActivity(intent)
+                }
+            }
         }
     }
 

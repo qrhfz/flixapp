@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCatalogue">
         <activity
-            android:name=".ui.detail.DetailActivity"
+            android:name=".ui.movie.MovieDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"

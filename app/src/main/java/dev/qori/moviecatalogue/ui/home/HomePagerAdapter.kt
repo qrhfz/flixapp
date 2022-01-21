@@ -3,8 +3,8 @@ package dev.qori.moviecatalogue.ui.home
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import dev.qori.moviecatalogue.ui.home.movie.MovieFragment
-import dev.qori.moviecatalogue.ui.home.tvshow.TvShowFragment
+import dev.qori.moviecatalogue.ui.movie.MovieFragment
+import dev.qori.moviecatalogue.ui.tvshow.TvShowFragment
 
 class HomePagerAdapter(activity: AppCompatActivity): FragmentStateAdapter(activity) {
     override fun getItemCount(): Int = 2
