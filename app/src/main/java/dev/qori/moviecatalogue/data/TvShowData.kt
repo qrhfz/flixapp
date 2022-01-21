@@ -98,7 +98,7 @@ object TvShowData {
         TvShow(
             1399,
             "Game of Thrones",
-            "https://github.com/qrhfz/flixapp/raw/main/assets/tv-shows/poster_flash.jpg",
+            "https://github.com/qrhfz/flixapp/raw/main/assets/tv-shows/poster_god.jpg",
             "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
             2011,
             2019,
