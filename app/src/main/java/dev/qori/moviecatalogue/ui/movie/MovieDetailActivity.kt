@@ -1,6 +1,7 @@
 package dev.qori.moviecatalogue.ui.movie
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import dev.qori.moviecatalogue.R
@@ -15,7 +16,9 @@ class MovieDetailActivity : AppCompatActivity() {
         binding = ActivityMovieDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val id = intent.getIntExtra("ID",-1)
-        val movie = MovieData.getWhereId(id)
+        val viewModel: MovieDetailViewModel by viewModels()
+        viewModel.id = id
+        val movie = viewModel.getMovieDetail()
         movie?.let {
             fillContent(it)
             title = it.title

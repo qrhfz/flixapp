@@ -2,6 +2,7 @@ package dev.qori.moviecatalogue.ui.tvshow
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import com.bumptech.glide.Glide
 
 import dev.qori.moviecatalogue.data.TvShowData
@@ -16,7 +17,9 @@ class TvShowDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val id = intent.getIntExtra("ID",-1)
-        val show = TvShowData.getWhereId(id)
+        val viewModel: TvShowDetailViewModel by viewModels()
+        viewModel.id = id
+        val show = viewModel.getTvShowDetail()
 
         show?.let {
             fillContent(show)
