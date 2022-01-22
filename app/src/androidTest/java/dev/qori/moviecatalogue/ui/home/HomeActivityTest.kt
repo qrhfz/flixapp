@@ -6,17 +6,13 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
-import androidx.test.espresso.contrib.ViewPagerActions
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import dev.qori.moviecatalogue.R
 import dev.qori.moviecatalogue.data.MovieData
 import dev.qori.moviecatalogue.data.TvShowData
-import kotlinx.coroutines.delay
-import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
-import java.lang.Thread.sleep
 
 class HomeActivityTest{
     @get:Rule

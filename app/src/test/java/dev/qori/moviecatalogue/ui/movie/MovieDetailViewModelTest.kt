@@ -2,8 +2,7 @@ package dev.qori.moviecatalogue.ui.movie
 
 import dev.qori.moviecatalogue.data.MovieData
 import dev.qori.moviecatalogue.entities.Movie
-import org.junit.Assert.*
-
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 

@@ -2,9 +2,8 @@ package dev.qori.moviecatalogue.ui.tvshow
 
 import dev.qori.moviecatalogue.data.TvShowData
 import dev.qori.moviecatalogue.entities.TvShow
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Before
-
 import org.junit.Test
 
 class TvShowDetailViewModelTest {

@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import dev.qori.moviecatalogue.R
-import dev.qori.moviecatalogue.data.MovieData
 import dev.qori.moviecatalogue.databinding.ActivityMovieDetailBinding
 import dev.qori.moviecatalogue.entities.Movie
 

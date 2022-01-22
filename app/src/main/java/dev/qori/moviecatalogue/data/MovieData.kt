@@ -2,7 +2,6 @@ package dev.qori.moviecatalogue.data
 
 import dev.qori.moviecatalogue.entities.Movie
 import dev.qori.moviecatalogue.entities.MovieAgeRating
-import dev.qori.moviecatalogue.entities.TvShow
 
 object MovieData {
     val list: List<Movie> = listOf(

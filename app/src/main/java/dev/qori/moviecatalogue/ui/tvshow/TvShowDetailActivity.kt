@@ -1,11 +1,9 @@
 package dev.qori.moviecatalogue.ui.tvshow
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-
-import dev.qori.moviecatalogue.data.TvShowData
 import dev.qori.moviecatalogue.databinding.ActivityTvShowDetailBinding
 import dev.qori.moviecatalogue.entities.TvShow
 
