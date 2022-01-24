@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import dev.qori.moviecatalogue.R
 import dev.qori.moviecatalogue.databinding.ActivityMovieDetailBinding
 import dev.qori.moviecatalogue.entities.Movie
 
@@ -28,10 +29,11 @@ class MovieDetailActivity : AppCompatActivity() {
             tvMovieTitle.text = movie.title
             tvMovieAgeRating.text = movie.ageRating.text
             tvMovieDescription.text = movie.description
-            tvGenres.text = movie.genres.joinToString(", ")
+            tvMovieGenres.text = movie.genres.joinToString(", ")
             tvMovieReleaseYear.text = movie.releaseYear.toString()
-            tvMovieScore.text = movie.score.toString()
-            Glide.with(this@MovieDetailActivity).load(movie.poster).into(ivPosterDetail)
+            tvMovieScore.text = String.format("%d%%", movie.score)
+            Glide.with(this@MovieDetailActivity).load(movie.poster).into(ivMoviePosterDetail)
+            ivMoviePosterDetail.setTag(R.id.ivMoviePosterDetail, movie.poster)
         }
     }
 }

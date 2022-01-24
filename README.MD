@@ -1,23 +1,50 @@
-## Skenario Pengujian
+## Skenario Intrumentation Testing
 ### HomeActivityTest.kt
-1. Menampilkan tablayout dan viewpager berisi 2 Tab untuk movies dan tv show
-    * Memastikan viewpager tampil
-    * Memastikan tab Movies dan tab Tv Show tampil
-    * Memastikan tab Movies dipilih
-    * Usap viewpager ke kanan dan memastikan tab tv show dipilih
-    * Usap viewpager ke kiri dan memastikan tab movies dipilih
-2. Memastikan recycler view menampilkan daftar movies dan tv show
-    * Memastikan recycler view movies tampil
-    * Gulir recyclerview ke movie terakhir
-    * Usap viewpager ke kiri untuk membuka tab tv show
-    * Memastikan recycler view tvshow tampil
-    * Gulirrecyclerview ke tvshow terakhir
-3. Membuka detail movie dan catalog
-    * Memastikan recycler view movies tampil
-    * Mengklik item pertama pada recycler view movies
-    * Memastikan judul movie yang tampil sama dengan item pertama pada data movie
-    * Pencet tombol Back
-    * Memastikan viewpager tampil dan usap ke kiri
-    * Memastikan recycler view tvshow tampil
-    * Mengklik item pertama pada recycler view tvshow
-    * Memastikan judul tvshow yang tampil sama dengan item pertama pada data tvshow
+1. Menampilkan halaman home
+    1. Memastikan **ViewPager2 vpHome** tampil
+    2. Memastikan **TabLayout tlHome** memiliki tab "MOVIES" dan "TV SHOW"
+    3. Memastikan tab Movies pada **tlHome** terpilih
+    4. Usap **vpHome** ke kanan
+    5. Memastikan tab tv show dipilih pada **tlHome**
+    6. Usap **vpHome** ke kiri 
+    7. Memastikan tab movie dipilih pada **tlHome**
+2. Memastikan daftar movies dan tv show dapat tampil
+    * Memastikan **RecylcerView rvMovie** tampil
+    * Gulir **rvMovie** ke movie terakhir
+    * Usap **vpHome** ke kiri
+    * Memastikan **RecylcerView rvTvShow** tampil
+    * Gulir **rvTvShow** ke item terakhir
+3. Membuka detail movie
+    * Memastikan **rvMovie** tampil
+    * Mengklik item pertama pada **rvMovie**
+    * Memastikan **TextView tvMovieTitle** tampil
+    * Memastikan **tvMovieTitle** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvMovieDescription** tampil
+    * Memastikan **tvMovieDescription** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvMovieAgeRating** tampil
+    * Memastikan **tvMovieAgeRating** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvMovieReleaseYear** tampil
+    * Memastikan **tvMovieReleaseYear** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowGenres** tampil
+    * Memastikan **tvTvShowGenres** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvMovieScore** tampil
+    * Memastikan **tvMovieScore** memiliki isi teks yang sesuai
+    * Memastikan **ImageView ivMoviePosterDetail** memiliki tag dengan value url poster
+4. Membuka detail tv show
+    * Memastikan **vpHome** tampil
+    * Mengusap **vpHome** ke kanan
+    * Mengklik item pertama pada **rvTvShow**
+    * Memastikan **TextView tvTvShowTitle** tampil
+    * Memastikan **tvTvShowTitle** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowDescription** tampil
+    * Memastikan **tvTvShowDescription** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowAgeRating** tampil
+    * Memastikan **tvTvShowAgeRating** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowAiringYear** tampil
+    * Memastikan **tvTvShowAiringYear** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowGenres** tampil
+    * Memastikan **tvTvShowGenres** memiliki isi teks yang sesuai
+    * Memastikan **TextView tvTvShowScore** tampil
+    * Memastikan **tvTvShowScore** memiliki isi teks yang sesuai
+    * Memastikan **ImageView ivTvShowPosterDetail** memiliki tag dengan value url poster
+

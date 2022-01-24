@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import dev.qori.moviecatalogue.R
 import dev.qori.moviecatalogue.databinding.ActivityTvShowDetailBinding
 import dev.qori.moviecatalogue.entities.TvShow
 
@@ -33,8 +34,9 @@ class TvShowDetailActivity : AppCompatActivity() {
             tvTvShowAgeRating.text = show.ageRating.text
             tvTvShowDescription.text = show.description
             tvTvShowGenres.text = show.genres.joinToString(", ")
-            tvTvShowAiringYear.text = String.format("%d - %d", show.firstSeasonYear, show.lastSeasonYear)
-            tvTvShowScore.text = show.score.toString()
+            tvTvShowAiringYear.text = String.format("%d-%d", show.firstSeasonYear, show.lastSeasonYear)
+            tvTvShowScore.text = String.format("%d%%", show.score)
+            ivTvShowPosterDetail.setTag(R.id.ivTvShowPosterDetail, show.poster)
             Glide.with(this@TvShowDetailActivity).load(show.poster).into(ivTvShowPosterDetail)
         }
     }

@@ -13,10 +13,10 @@ class HomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.viewPager.adapter = HomePagerAdapter(this)
+        binding.vpHome.adapter = HomePagerAdapter(this)
         TabLayoutMediator(
-            binding.tabLayout,
-            binding.viewPager
+            binding.tlHome,
+            binding.vpHome
         ){
             tab, position->
             tab.text = tabTitles[position]
